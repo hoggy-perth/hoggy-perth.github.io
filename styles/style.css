@@ -1,4 +1,11 @@
+body {
+    background-color: lightblue;
+}
 p {
-    color: red;
-  }
-  
+  color: red; background-color: yellow;
+}
+table { width: 400px; } table, td, th { border: 1px solid black; }
+
+a {
+  color: blue;
+}
