@@ -1,6 +1,7 @@
 body {
     background-color: lightblue;
 }
+
 table { width: 100%; } table, td, th { border: 1px solid black; }
 
 a {
