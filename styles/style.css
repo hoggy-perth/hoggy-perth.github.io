@@ -1,11 +1,15 @@
 body {
     background-color: lightblue;
 }
-p {
-  color: red; background-color: yellow;
-}
 table { width: 400px; } table, td, th { border: 1px solid black; }
 
 a {
   color: blue;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto\9; /* ie8 */
+}
+
