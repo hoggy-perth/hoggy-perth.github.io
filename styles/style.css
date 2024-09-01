@@ -2,15 +2,24 @@ body {
     background-color: lightblue;
 }
 
-table { width: 100%; } table, td, th { border: 1px solid black; }
+table { width: 100%; } 
+  table, 
+  td, 
+  th,
+  thead { border: 1px solid black; }
 
 a {
   color: blue;
 }
-
+*/
 img {
   max-width: 100%;
   height: auto;
   width: auto\9; /* ie8 */
 }
 
+caption {
+  background: gray;
+  margin: 1em 0; 
+  caption-side: top; 
+}
