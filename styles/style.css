@@ -2,16 +2,17 @@ body {
     background-color: lightblue;
 }
 
-table { width: 100%; } 
+table { width: 100%; border-collapse: collapse;} 
   table, 
   td, 
   th,
   thead { border: 1px solid black; }
 
+
 a {
   color: blue;
 }
-*/
+
 img {
   max-width: 100%;
   height: auto;
