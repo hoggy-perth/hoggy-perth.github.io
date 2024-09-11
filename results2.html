@@ -25,40 +25,50 @@
    <li>    <a href="groups.html" target="_self">Tee Off Groupings</a> 
    </li>
  </ul>
+ 
 
+
+<!--<script src="js/script.js"></script> 
+
+<input type="file" id="fileUpload" />
+<input type="button" id="upload" value="Upload" onclick="Upload()" />
+<hr />
+<div id="dvCSV">
+</div>
+<button onclick="getElementById('demo').innerHTML = Date()">What is the time?</button>
+<input type="button" id="btnsubmit" value="Read" onclick="readCSVFile();">
+
+<input type="button" id="btnsubmit" value="Read" onclick="Upload();">
+-->
 <br>
 <table id="results">
+<!--
+    <caption><b>RESULTS</b></caption>
+        <col>
+        <col>
+        <colgroup span="2"></colgroup>
+        <colgroup span="2"></colgroup>
+        <colgroup span="2"></colgroup>
+-->        
   <thead>
     <tr>
-      <th colspan="3" scope="colgroup">Player</th>
-      <th colspan="3" scope="colgroup">New Kuta</th>
-      <th colspan="3" scope="colgroup">Pandawa</th>
-      <th colspan="5" scope="colgroup">Bali National</th>
-      <th colspan="2" scope="colgroup">Final Results</th>
+      <th colspan="2" scope="colgroup">Player Name</th>
+      <th scope="col">GA Handicap</th>
+      <th colspan="2" scope="colgroup">New Kuta</th>
+      <th colspan="2" scope="colgroup">Pandawa</th>
+      <th colspan="3" scope="colgroup">Bali National</th>
      </tr>
     <tr>
       <th>#</th>
-      <th>Name</th>
-      <th>GA Handicap</th>
-<!--New Kuta-->
+      <th></th>
+      <th></th>
       <th>Hcp</th>
       <th>Score</th>
-      <th>Position</th>
-<!--Pandawa-->
       <th>Hcp</th>
       <th>Score</th>
-      <th>Position</th>
-<!--Bali National R1-->
       <th>Hcp</th>
       <th>Score Round 1</th>
-      <th>Position Round 1</th>
-<!--Bali National R2-->
       <th>Score Round 2</th>
-      <th>Position Round 2</th>
-<!--Final Standings-->
-      <th>Overall Score</th>
-      <th>Tournament Position</th>
-
    </tr>
   </thead>
   
@@ -66,12 +76,6 @@
     <tr>
         <td></td>
         <td>Belly</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -92,22 +96,10 @@
         <td></td>
         <td></td>
         <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
     </tr>
     <tr>
         <td></td>
         <td>Gal</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -128,23 +120,11 @@
         <td></td>
         <td></td>
         <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
     </tr>
     <tr>
         <td></td>
         <td>Hoggy</td>
-        <td>9.3</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>9.0</td>
         <td></td>
         <td></td>
         <td></td>
@@ -156,12 +136,6 @@
     <tr>
         <td></td>
         <td>Huddo</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -182,22 +156,10 @@
         <td></td>
         <td></td>
         <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
     </tr>
     <tr>
         <td></td>
         <td>PJ</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -218,22 +180,10 @@
         <td></td>
         <td></td>
         <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
     </tr>
     <tr>
         <td></td>
         <td>Feathers</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -254,22 +204,10 @@
         <td></td>
         <td></td>
         <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
     </tr>
     <tr>
         <td></td>
         <td>Damo</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -286,3 +224,44 @@
 </body>
 
 </html>
+<!--  
+
+-->
+
+<!--
+Belly,26.6,,,,
+Tim Bow,13.6,,,,
+Gal,,,,,
+Greeny,,,,,
+Hoggy,,,,,
+Huddo,,,,,
+John,,,,,
+PJ,,,,,
+Noske,,,,,
+Campbell,,,,,
+Scotty,,,,,
+Damo,,,,,
+
+<p id="Results">
+    <table>
+        <th>Golf Rounds</th>
+        <tr>
+            <td>Name</td>
+            <td>Handicap</td>
+            <td>New Kuta</td>
+            <td>Pandawa</td>
+            <td>Bali National</td>
+            <td>Bali National</td>
+        </tr>
+        <tr>
+            <td>Belly</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</p>   
+
+
+-->
